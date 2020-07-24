@@ -1,0 +1,4 @@
+google==3.0.0
+grpcio==1.30.0
+numpy==1.19.0
+protobuf==3.12.2

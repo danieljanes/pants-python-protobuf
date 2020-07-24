@@ -1,0 +1,22 @@
+[GLOBAL]
+pants_version = "2.0.0.dev5"
+pantsd = true
+dynamic_ui = true
+backend_packages = [
+  "pants.backend.codegen.protobuf.python",
+  "pants.backend.python",
+]
+plugins = [
+]
+
+[source]
+root_patterns = [
+  "/src/proto",
+  "/src/py",
+]
+
+[python-setup]
+interpreter_constraints = [">=3.7"]
+
+[protoc]
+runtime_targets = ["//third_party/py:protobuf"]

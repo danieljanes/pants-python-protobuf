@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package myorg.proto;
+
+message Foo {
+    string content = 1;
+    string timestamp = 2;    
+}

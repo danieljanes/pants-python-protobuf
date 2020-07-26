@@ -6,3 +6,7 @@ message Foo {
     string content = 1;
     string timestamp = 2;    
 }
+
+service FooService {
+    rpc Bar(stream Foo) returns (stream Foo) {}
+}

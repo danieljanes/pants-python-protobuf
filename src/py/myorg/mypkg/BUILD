@@ -12,7 +12,7 @@ python_tests(
 )
 
 python_binary(
-    name = "bin",
+    name = "mypkg-bin",
     dependencies = [
         ":mypkg",
     ],

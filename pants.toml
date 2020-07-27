@@ -5,6 +5,10 @@ dynamic_ui = true
 backend_packages = [
   "pants.backend.codegen.protobuf.python",
   "pants.backend.python",
+  "pants.backend.python.lint.black",
+  "pants.backend.python.lint.isort",
+  "pants.backend.python.lint.pylint",
+  "pants.backend.python.typecheck.mypy",
 ]
 plugins = [
 ]
@@ -18,5 +22,19 @@ root_patterns = [
 [python-setup]
 interpreter_constraints = [">=3.7"]
 
+[black]
+config = "pyproject.toml"
+
+[isort]
+config = "pyproject.toml"
+
+[mypy]
+version = "mypy==0.782"
+config = "mypy.ini"
+
 [protoc]
-runtime_targets = ["//third_party/py:protobuf"]
+runtime_targets = [
+  "//third_party/py:google",
+  "//third_party/py:grpcio",
+  "//third_party/py:protobuf",
+]

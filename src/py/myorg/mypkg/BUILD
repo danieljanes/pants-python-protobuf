@@ -1,6 +1,7 @@
 python_library(
     dependencies = [
         "src/proto/myorg/proto",
+        "src/proto/myorg/proto:init",
     ],
 )
 

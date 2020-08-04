@@ -17,5 +17,5 @@ python_binary(
     dependencies = [
         ":mypkg",
     ],
-    entry_point = "myorg.mypkg.bar:main",
+    entry_point = "myorg.mypkg.mybar:main",
 )

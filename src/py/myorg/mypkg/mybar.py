@@ -12,7 +12,7 @@ def create_foo():
     )
 
 
-def main():
+def main() -> None:
     """Docstr."""
     msg = create_foo()
     print(msg)

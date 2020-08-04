@@ -23,9 +23,11 @@ root_patterns = [
 interpreter_constraints = [">=3.7"]
 
 [black]
+version = "black==19.10b0"
 config = "pyproject.toml"
 
 [isort]
+version = "isort[pyproject]==4.3.21"
 config = "pyproject.toml"
 
 [mypy]

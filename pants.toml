@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.0.0.dev6"
+pants_version = "2.0.0.dev6+git6c90064f"
 pantsd = true
 dynamic_ui = true
 backend_packages = [

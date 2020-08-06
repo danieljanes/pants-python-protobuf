@@ -1,3 +1,3 @@
-protobuf_library()
-
-python_library(name="init")
+protobuf_library(
+    python_source_root="src/py",
+)
